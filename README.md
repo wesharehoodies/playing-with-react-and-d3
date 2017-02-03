@@ -24,7 +24,7 @@ D3 essentially does 4 things: load data, bind data elements to the DOM via JavaS
 
 D3 is great at data visualizations, but it manipulates the DOM directly to display that data. Rendering DOM elements is where React shines. It uses a virtual representation of the DOM (virtual DOM) and uses a super performant diffing algorithm to determine the fastest way to update the DOM. We want to leverage React's highly efficient, declarative, and reusable components with D3's data utility functions. Also, once we create a chart component, we can reuse that chart with different data anywhere in our app.
 
-## How use React and D3?
+## How to use React and D3?
 
 D3, like React, is declarative. Unlike React, D3 used data binding, while React uses a uni-directional data flow paradigm. Getting them to work together takes a bit of work but the strategy is fairly simple: since SVG lives in the DOM, let React handle displaying SVG representations of the data, while letting D3 handle all the math required to render the data.
 
